@@ -1,0 +1,28 @@
+#!/bin/sh                                                                                                                                                                                                 
+                                                                                                                                                                                                          
+   echo "Enter a number to print reverse till zero"                                                                                                                                                       
+                                                                                                                                                                                                          
+   read a                                                                                                                                                                                                 
+                                                                                                                                                                                                          
+   i=$a                                                                                                                                                                                                   
+                                                                                                                                                                                                          
+     if [ $a -lt 0 ]                                                                                                                                                                                      
+                                                                                                                                                                                                          
+       then                                                                                                                                                                                               
+                                                                                                                                                                                                          
+        echo "Please provide positive number to print"                                                                                                                                                    
+                                                                                                                                                                                                          
+       else                                                                                                                                                                                               
+                                                                                                                                                                                                          
+                                                                                                                                                                                                          
+                                                                                                                                                                                                          
+       while [ $i -ge 0 ]                                                                                                                                                                                 
+                                                                                                                                                                                                          
+        do                                                                                                                                                                                                
+                                                                                                                                                                                                          
+           echo $i                                                                                                                                                                                        
+           let i--                                                                                                                                                                                          
+                                                                                                                                                                                                          
+        done                                                                                                                                                                                              
+                                                                                                                                                                                                          
+    fi

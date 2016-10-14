@@ -1,0 +1,20 @@
+#!/bin/sh                                                                                                                                                                                                 
+                                                                                                                                                                                                          
+echo "enter number to reverse"                                                                                                                                                                            
+                                                                                                                                                                                                          
+read a                                                                                                                                                                                                    
+                                                                                                                                                                                                          
+       if [ $a -gt 0 ]                                                                                                                                                                                    
+             then                                                                                                                                                                                         
+                 num=$a                                                                                                                                                                                   
+                 sumi=0                                                                                                                                                                                   
+                 while [ $num -gt 0 ]                                                                                                                                                                     
+                 do                                                                                                                                                                                       
+                 lnum=`expr $num %  10`                                                                                                                                                                   
+                 sumi=`expr $sumi \* 10 + $lnum`                                                                                                                                                          
+                 num=`expr $num \/ 10`                                                                                                                                                                    
+                 done                                                                                                                                                                                     
+                 echo "Reverse of digits is  $sumi of $a"                                                                                                                                                 
+         else                                                                                                                                                                                             
+                 echo " Number is less than 0"                                                                                                                                                            
+               fi
